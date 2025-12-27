@@ -73,8 +73,8 @@ const About = () => {
             <div className="grid grid-cols-3 gap-8 text-center">
               {[
                 { number: '25+', label: 'Years Active' },
-                { number: '12', label: 'Albums' },
-                { number: '40+', label: 'Countries' },
+                { number: '9', label: 'Albums' },
+                { number: '10+', label: 'Countries' }
               ].map((stat, index) => (
                 <div 
                   key={stat.label}

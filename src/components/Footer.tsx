@@ -11,7 +11,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-muted-foreground text-sm tracking-[0.1em] mb-4 md:mb-0">
-            © 2024 Dirk Shumaker. All rights reserved.
+            © 2026 Dirk Shumaker. All rights reserved.
           </p>
           
           <div className="flex items-center space-x-8">

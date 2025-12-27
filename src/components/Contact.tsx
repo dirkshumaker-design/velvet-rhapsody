@@ -4,6 +4,12 @@ const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
+  const socialLinks = {
+    Instagram: 'https://www.instagram.com/dirk_shumaker/',
+    Spotify: 'https://open.spotify.com/album/214ytOPWdfW4uJviw0FV06',
+    Facebook: 'https://www.facebook.com/dirk.shumaker.2025/',
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -33,8 +39,8 @@ const Contact = () => {
           
           <div className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-12">
-              Let's create <span className="italic">something</span>
-              <br />beautiful together
+              For more information about Dirk Shumaker
+              <br />and Big Bad Voodoo Daddy
             </h2>
           </div>
           
@@ -44,31 +50,33 @@ const Contact = () => {
                 Booking & Inquiries
               </p>
               <a 
-                href="mailto:booking@marcuscole.com"
+                href="mailto:"
                 className="text-xl md:text-2xl font-light hover:text-muted-foreground transition-colors duration-300"
               >
-                booking@marcuscole.com
+                scott@artisanagency.net
               </a>
             </div>
             
             <div>
               <p className="text-muted-foreground text-sm tracking-[0.1em] uppercase mb-2">
-                Press
+                Management
               </p>
               <a 
-                href="mailto:press@marcuscole.com"
+                href="mailto:management@bbvd.com"
                 className="text-xl md:text-2xl font-light hover:text-muted-foreground transition-colors duration-300"
               >
-                press@marcuscole.com
+                management@bbvd.com
               </a>
             </div>
           </div>
           
           <div className={`flex justify-center space-x-8 transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-            {['Instagram', 'Spotify', 'YouTube'].map((platform) => (
+            {Object.entries(socialLinks).map(([platform, url]) => (
               <a
                 key={platform}
-                href="#"
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground text-sm tracking-[0.15em] uppercase hover:text-foreground transition-colors duration-300"
               >
                 {platform}

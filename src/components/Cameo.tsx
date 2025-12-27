@@ -24,22 +24,22 @@ const Cameo = () => {
   const cameoOptions = [
     {
       title: 'Personal Message',
-      price: '$150',
+      price: '$30',
       description: 'A personalized video message for birthdays, anniversaries, or special occasions.',
       features: ['Up to 2 minutes', 'Personalized script', 'Digital delivery'],
     },
     {
-      title: 'Musical Dedication',
+      title: 'Commercial Message',
       price: '$300',
-      description: 'A custom musical performance with a personal message dedication.',
+      description: 'A custom musical performance with a commercial message dedication.',
       features: ['Original bass performance', 'Personal dedication', 'HD video quality'],
       featured: true,
     },
     {
       title: 'Masterclass Session',
-      price: '$500',
-      description: 'A private one-on-one virtual lesson covering technique and musicianship.',
-      features: ['30-minute live session', 'Q&A included', 'Recording provided'],
+      price: 'TBA',
+      description: 'A comprehensive masterclass covering bass techniques and performance tips with video lessons, exercises, and assignments.',
+      features: ['30-minute live session', 'Q&A included', 'Professional Advice'],
     },
   ];
 
@@ -109,13 +109,17 @@ const Cameo = () => {
                 ))}
               </ul>
               
-              <button className={`w-full py-4 text-sm tracking-[0.2em] uppercase transition-all duration-500 ${
+              <a 
+                href="https://www.cameo.com/dirkshumaker?qid=1766816055&aaQueryId=adf84721ad896d680291f3f5290c12fc" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={`inline-block w-full py-4 text-sm tracking-[0.2em] uppercase transition-all duration-500 text-center ${
                 option.featured 
                   ? 'bg-gold text-background hover:bg-gold/90' 
                   : 'border border-foreground/30 text-foreground hover:bg-foreground hover:text-background'
               }`}>
                 Book Now
-              </button>
+              </a>
               
               {/* Hover effect line */}
               <div className="absolute bottom-0 left-0 w-full h-px bg-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />

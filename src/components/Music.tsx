@@ -2,23 +2,23 @@ import { useEffect, useRef, useState } from 'react';
 
 const albums = [
   {
-    title: 'Midnight Reverie',
-    year: '2024',
+    title: 'Still In The Mood',
+    year: '2012',
     description: 'A nocturnal journey through contemplative landscapes',
   },
   {
-    title: 'Urban Echoes',
-    year: '2022',
+    title: 'I Like It',
+    year: '2003',
     description: 'The sounds of city life translated into jazz',
   },
   {
-    title: 'First Light',
-    year: '2020',
+    title: 'You & Me & The Bottle Makes 3 Tonight Live Recording',
+    year: '2004',
     description: 'Dawn compositions capturing new beginnings',
   },
   {
-    title: 'The Standards Session',
-    year: '2018',
+    title: 'Still In Love With You',
+    year: '1999',
     description: 'Reimagining timeless classics',
   },
 ];
