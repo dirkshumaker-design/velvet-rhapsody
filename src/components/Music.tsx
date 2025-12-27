@@ -7,8 +7,8 @@ const albums = [
     description: 'A nocturnal journey through contemplative landscapes',
   },
   {
-    title: 'I Like It',
-    year: '2003',
+    title: 'You\'re A Mean One Mr. Grinch',
+    year: '2013',
     description: 'The sounds of city life translated into jazz',
   },
   {
