@@ -2,24 +2,20 @@ import { useEffect, useRef, useState } from 'react';
 
 const albums = [
   {
-    title: 'Still In The Mood',
-    year: '2012',
-    description: 'A nocturnal journey through contemplative landscapes',
+    title: 'How Big Can You Get?',
+    year: '2009'
   },
   {
     title: 'You\'re A Mean One Mr. Grinch',
-    year: '2013',
-    description: 'The sounds of city life translated into jazz',
+    year: '2013'
   },
   {
     title: 'You & Me & The Bottle Makes 3 Tonight Live Recording',
-    year: '2004',
-    description: 'Dawn compositions capturing new beginnings',
+    year: '2004'
   },
   {
     title: 'Still In Love With You',
-    year: '1999',
-    description: 'Reimagining timeless classics',
+    year: '1999'
   },
 ];
 
@@ -76,9 +72,6 @@ const Music = () => {
                 </div>
                 
                 <div className="flex items-center space-x-8 md:space-x-16">
-                  <p className="text-muted-foreground text-sm md:text-base max-w-xs hidden lg:block">
-                    {album.description}
-                  </p>
                   <span className="text-muted-foreground text-sm tracking-wider">
                     {album.year}
                   </span>
