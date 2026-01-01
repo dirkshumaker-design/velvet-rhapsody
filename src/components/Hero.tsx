@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import heroBass from '@/assets/hero-bass.jpg';
+import heroBass from '@/assets/b&w.png';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
