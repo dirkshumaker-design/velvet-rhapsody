@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import bassDetail from '@/assets/bass-detail.jpg';
 
 const Cameo = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,6 +46,16 @@ const Cameo = () => {
 
   return (
     <section id="cameo" ref={sectionRef} className="relative py-32 md:py-40 bg-card overflow-hidden">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 pointer-events-none">
+        <img 
+          src={bassDetail} 
+          alt="Upright bass detail" 
+          className="w-full h-full object-cover opacity-10"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-card via-card/95 to-card" />
+      </div>
+      
       {/* Elegant background decoration */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-32 bg-gradient-to-b from-transparent via-gold/30 to-transparent" />

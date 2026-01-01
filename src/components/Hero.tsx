@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import heroBass from '@/assets/hero-bass.jpg';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,8 +10,16 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-card" />
+      {/* Background image with overlay */}
+      <div className="absolute inset-0">
+        <img 
+          src={heroBass} 
+          alt="Dirk Shumaker performing on bass" 
+          className="w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
+        <div className="absolute inset-0 bg-background/40" />
+      </div>
       
       {/* Elegant floating circles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
