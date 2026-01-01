@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import aboutPortrait from '@/assets/DSC_1529.jpg';
-import bandPerformance from '@/assets/BigBadVoodooDaddy_WH_NOV2012-5634.jpg';
+import bandPerformance from '@/assets/BBVD001.jpg';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
