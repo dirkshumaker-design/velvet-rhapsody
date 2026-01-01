@@ -105,9 +105,7 @@ const About = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-background/80" />
               <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-2xl md:text-3xl font-light text-foreground/90 tracking-wider text-center px-6">
-                  30+ Years of <span className="italic text-gold">Swing</span>
-                </p>
+                
               </div>
             </div>
           </div>
