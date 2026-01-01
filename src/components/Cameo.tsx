@@ -142,13 +142,7 @@ const Cameo = () => {
         <div className={`mt-24 max-w-3xl mx-auto text-center transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
           <div className="relative">
             <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-6xl text-gold/20 font-serif">"</div>
-            <blockquote className="text-xl md:text-2xl font-light italic text-foreground/90 leading-relaxed mb-6">
-              Dirk's cameo made my father's 70th birthday unforgettable. The personal touch 
-              and musical genius shone through every note.
-            </blockquote>
-            <cite className="text-muted-foreground text-sm tracking-[0.1em] not-italic">
-              — Sarah M., New York
-            </cite>
+            
           </div>
         </div>
       </div>
