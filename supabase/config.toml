@@ -1,1 +1,4 @@
 project_id = "lsewfoudlpopukczuygv"
+
+[functions.ticketmaster-shows]
+verify_jwt = false
